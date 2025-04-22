@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="container flex flex-col p-8 pb-20 gap-16 sm:p-20 mx-auto">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl font-parkinsans">Aurora's latest collection</h1>
+        <h1 className="text-4xl font-parkinsans">Auroras latest collection</h1>
         <h2>Material Gallery</h2>
 
         <GalleryAPI />
