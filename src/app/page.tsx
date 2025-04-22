@@ -1,6 +1,6 @@
 // "use-client";
 import Image from "next/image";
-import { DefaultGallery } from "./components/Gallery";
+
 import GalleryAPI from "./components/Gallery4";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="text-4xl font-parkinsans">Aurora's latest collection</h1>
         <h2>Material Gallery</h2>
-        {/* <DefaultGallery /> */}
+
         <GalleryAPI />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
