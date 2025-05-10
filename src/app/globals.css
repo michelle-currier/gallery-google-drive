@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #CACEB3;  
+  --background: linear-gradient(245deg, rgba(202, 206, 179, 1) 0%, rgba(203, 191, 153, 1) 100%);
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: oklch(0.704 0.04 256.788);
   }
 }
 
@@ -29,4 +30,14 @@ h4,
 button,
 label {
   @apply font-parkinsans;
+}
+
+h1 {
+  color: oklch(0.591 0.293 322.896);
+}
+h2 {
+  color: oklch(0.585 0.233 277.117);
+}
+h3 {
+  color: oklch(0.646 0.222 41.116);
 }

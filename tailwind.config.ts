@@ -9,6 +9,16 @@ export default {
   ],
   theme: {
     extend: {
+      typography: (theme: (arg0: string) => any) => ({
+        default: {
+          css: {
+            h1: { color: theme('colors.teal.700')},
+            h2: { color: theme('colors.fuchsia.600')},
+            h3: { color: theme('colors.indigo.700')},
+            h4: { color: theme('colors.lime.500')},
+          },
+        },
+      }),
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

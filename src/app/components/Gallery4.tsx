@@ -53,7 +53,7 @@ const GalleryAPI: React.FC = () => {
 
   return (
     <div className="pt-2">
-      <h1 className="text-2xl font-bold mb-4">Image Gallery</h1>
+      <h2 className="text-2xl font-bold mb-4">Image Gallery</h2>
       {images.length === 0 ? (
         <p>No images found.</p>
       ) : (
