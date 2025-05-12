@@ -95,7 +95,7 @@ export function NavbarSimple() {
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
-          Aurora Jiminez
+          Your name here
         </Typography>
         {/* Desktop Navigation */}
         <div className="hidden lg:block">

@@ -67,7 +67,7 @@ const GalleryAPI: React.FC = () => {
               <img
                 src={image.url}
                 alt={image.name}
-                className="h-40 w-full max-w-full rounded-lg object-cover object-center cursor-pointer"
+                className="h-60 w-full max-w-full rounded-lg object-cover object-center cursor-pointer"
               />
               <p className="text-sm text-center mt-2">{image.name}</p>
             </div>
