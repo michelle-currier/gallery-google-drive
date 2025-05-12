@@ -77,8 +77,19 @@ const GalleryAPI: React.FC = () => {
 
       {/* Dialog modal for larger image view */}
       {selectedImage && (
-        <Dialog open={openModal} handler={toggleModal} className="">
-          <DialogBody className="flex flex-col">
+        <Dialog
+          open={openModal}
+          handler={toggleModal}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
+          <DialogBody
+            className="flex flex-col"
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          >
             <div className="flex justify-end">
               <button
                 className="mt-8 px-4 py-2 bg-purple-500 text-white rounded-md"

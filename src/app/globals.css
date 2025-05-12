@@ -7,20 +7,31 @@
   --background: linear-gradient(245deg, rgba(202, 206, 179, 1) 0%, rgba(203, 191, 153, 1) 100%);
   --foreground: #171717;
 }
+nav {
+  border: 0px solid transparent;
+}
+nav > div.logo > a {
+  color:  oklch(0.453 0.124 130.933);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: oklch(0.704 0.04 256.788);
+    --logo-color: oklch(0.648 0.2 131.684);
+  }
+  nav > div.logo > a {
+    color: var(--logo-color);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-
   @apply font-geistMono;
 }
+
+
 
 /* Apply parkinsans to specific elements */
 h1,
