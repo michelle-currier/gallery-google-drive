@@ -14,7 +14,14 @@ function NavList({ isVisible }: { isVisible: boolean }) {
       className={`my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 transition-opacity delay-150
     ${isVisible ? "opacity-100" : "opacity-0"}`}
     >
-      <Typography as="li" variant="small" className="p-1 font-medium">
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <a
           href="/about"
           className="flex items-center text-teal-600 hover:text-blue-500 transition-colors"
@@ -22,7 +29,14 @@ function NavList({ isVisible }: { isVisible: boolean }) {
           about
         </a>
       </Typography>
-      <Typography as="li" variant="small" className="p-1 font-medium">
+      <Typography
+        as="li"
+        variant="small"
+        className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <a
           href="/gallery"
           className="flex items-center text-teal-600 hover:text-blue-500 transition-colors"
@@ -35,6 +49,9 @@ function NavList({ isVisible }: { isVisible: boolean }) {
         variant="small"
         color="teal"
         className="p-1 font-medium"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         <a
           href="/contact"
@@ -62,13 +79,21 @@ export function NavbarSimple() {
     };
   }, []);
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-6 py-3">
+    <Navbar
+      className="mx-auto max-w-screen-xl px-6 py-3"
+      placeholder={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
+    >
       <div className="flex items-center justify-between logo">
         <Typography
           as="a"
           href="/"
           variant="h4"
           className="mr-4 cursor-pointer py-1.5 font-bold"
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           Aurora Jiminez
         </Typography>
@@ -82,6 +107,9 @@ export function NavbarSimple() {
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav((prev) => !prev)}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           {openNav ? (
             <XMarkIcon className="h-6 w-6" strokeWidth={2} />
